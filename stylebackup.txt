@@ -1,0 +1,43 @@
+﻿
+.top-menu {
+background: rgba(0,0,0,0.6); padding: 18px 0; font-family: 'Open Sans', sans-serif; position: fixed; top: 0; width: 100%; z-index: 999999;}
+
+.navbar-default .navbar-toggle {
+border: none;}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background: #f7f6f6 !important; border-radius: 0 !important;}
+
+.topNav li {margin: 0 20px;}
+.topNav li a {
+text-transform: uppercase; color: #fff !important;text-shadow: 0 1px 1px #000000; font-size: 14px !important; padding: 10px 9px !important;}
+
+.topNav li a:hover {
+color: #40c02d !important;}
+.dropdown { background: #fff;border-radius: 6px !important;}
+
+li.dropdown a { text-shadow: none !important;color: #000000 !important;padding: 7px !important;}
+
+li.dropdown a:focus { outline: none;}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { border-radius: 6px !important;}
+
+.dropdown-menu li { margin: 0;}
+
+.outer1 { background: url("images/coverPicBg.png");height: 400px;}
+
+.topHeader { padding: 15% 0 0 0;}
+
+.leftCol { background: #fff;margin-right: 30px;padding: 12px;min-height: 195px !important;}
+.rightCol { background: rgba(0, 0, 0, 0.5);padding: 12px;min-height: 195px !important;color: #fff;}
+
+.profilePic { width: 168px;height: 168px;padding: 10px;background: #fff;box-shadow: 0px 1px 2px #333;margin: -42% 0 0 18%}
+.profilePic img {/*position: absolute;top: -60px;left: 55px;*/}
+
+.userName {font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 24px;text-shadow: 0 1px 2px #000000;text-align: center;margin-top: 10px;}
+.userPicBtn a { background: #40c02d;border-radius: 6px !important;font-family: 'Open Sans', sans-serif;font-size: 14px;padding: 3px;margin: 0 2px;color: #333333;float: left;width: 48%;}
+.userPicBtn a label img { margin-right: 5px;}
+.userPicBtn a label { float: left;font-weight: normal;margin-bottom: 0;}
+.whiteTextBold { color: #fff;font-weight: bold;}
+
+hr { margin-bottom: 8px !important;margin-top: 8px !important;}

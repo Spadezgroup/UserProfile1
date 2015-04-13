@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-glyphicons.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+       $(window).load(function() {          
+             var i =0;
+             var images = ['coverPicBg1.png', 'coverPicBg.png', 'coverPicBg2.png'];
+             var image = $('#slideit');
+                           //Initial Background image setup
+             image.css('background-image', 'url(coverPicBg.png)');
+                           //Change image at regular intervals
+             setInterval(function(){  
+             image.fadeOut(1000, function () {
+             image.css('background-image', 'url(' + images [i++] +')');
+             image.fadeIn(3000);
+               });
+                if(i == images.length)
+                      i = 0;
+                 }, 8000);           
+             });
+      </script>
+</head>
+<body>
+    <!-- top section starts here-->
+<div class="top-menu">
+    <div class="container">
+            <div class="navbar-header">
+           		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+               <h1 class="logo navbar-brand">Logo</h1>
+            </div>
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right">
+                                <ul class="nav navbar-nav topNav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#" class="active">About Me</a></li>
+                                    <li class="dropdown customDropdown">
+                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+                                      <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#"> &nbsp; <i class="fa fa-twitter"></i> &nbsp; Twitter</a></li>
+                                        <li><a href="#"> &nbsp; <i class="fa fa-facebook"></i> &nbsp; Facebook</a></li>
+                                        <li><a href="#"> &nbsp; <i class="fa fa-rss"></i> &nbsp; Blog</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                    <a data-toggle="dropdown" tabindex="0" aria-expanded="false"><img src="images/profilePic_small.png" alt="" /> S. Johansson<span class="caret"></span></a>
+    
+                                    <!-- role="menu": fix moved by arrows (Bootstrap dropdown) -->
+                                    <ul role="menu" class="dropdown-menu">
+                                      <li><a tabindex="0"><span class="glyphicon glyphicon-info-sign"></span> &nbsp;My Account</a></li>
+                                      <li><a tabindex="0"><span class="glyphicon glyphicon-cog"></span> &nbsp;Settings</a></li>
+                                      <li><a tabindex="0"><span class="glyphicon glyphicon-off"></span> &nbsp;Logout</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                <!-- /.container-fluid -->
+            </nav>
+    </div>
+</div>
+    <div class="outer1" style="z-index: 99999;">
+        <div class="container">
+            <div class="row">
+             <div class="topHeader">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                <div class="leftCol">
+                    <div class="profilePic">
+                        <img src="images/profilePic_big.png" alt="" class="img-responsive" />
+                    </div>
+                    <h3 class="userName">Scarlett Johansson</h3>
+                    <hr />
+                    <div class="userPicBtn">
+                        <a href="javascript:;">
+                            <label><img src="images/investors_icon.png" /></label>
+                            <label><span class="whiteTextBold">10</span><br />
+                                <span>Investors</span></label>
+                        </a>
+                        <a href="javascript:;">
+                            <label><img src="images/investments_icon.png" /></label>
+                            <label><span class="whiteTextBold">100</span><br />
+                                <span>Investments</span></label>
+                        
+                        </a>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 hidden-xs">
+                  <div class="rightCol">
+                    <h1 class="rightColTitle">Preferred Games</h1>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <ul class="games">
+                                <li>
+                                    <a>Texas Hold 'Em</a>
+                                </li>
+                                <li>
+                                    <a>Omaha</a>
+                                </li>
+                                <li>
+                                    <a>7-Card Stud</a>
+                                </li>
+                                <li>
+                                    <a>5-Card Draw</a>
+                                </li>
+                                <li>
+                                    <a>Follow the Queen</a>
+                                </li>
+                                <li>
+                                    <a>2-7 lowball</a>
+                                </li>
+                                <li>
+                                    <a>Crazy Pineapple</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row marginTop15">
+                                <span class="col-sm-2"><img src="images/map_marker_icon.png" /></span>
+                                <span class="col-sm-8">Location</span>
+                            </div>
+                            <div class="row marginTop15">
+                                <span class="col-sm-2"><img src="images/twitter_icon.png" /></span>
+                                <span class="col-sm-8">Twitter Handle</span>
+                            </div>
+                            <div class="row marginTop15">
+                                <span class="col-sm-2"><img src="images/poker_icon.png" /></span>
+                                <span class="col-sm-8">Online Poker Name</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="slideit" style="width:100%;height:400px;position: absolute; top: 0;z-index: 0;"> 
+    </div>
+    
+    
+    <div class="clear"></div>
+    
+        <div class="container marginTop45">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+           		 <div class="panel">
+                   <div class="panel-heading tweet-heading"> <h1 class="panel-title"><img src="images/tweet.png" width="42" height="42" alt="">Tweets</h1></div>
+                   <div class="panel-body">
+                   	<ul class="list-unstyled tweet-comment">
+                        <li>
+                        	<h3>World Cup 2015 !!!</h3>
+                            <p>There are many systems which have a need for user profile pages which display personal information on each member.</p>
+                            <a href="javascript:;">Read More</a>
+                        </li>
+                        <li>
+                        	<h3>World Cup 2015 !!!</h3>
+                            <p>There are many systems which have a need for user profile pages which display personal information on each member.</p>
+                            <a href="javascript:;">Read More</a>
+                        </li>
+                        <li>
+                        	<h3>World Cup 2015 !!!</h3>
+                            <p>There are many systems which have a need for user profile pages which display personal information on each member.</p>
+                            <a href="javascript:;">Read More</a>
+                        </li>
+                    </ul>
+                   </div>
+           		 </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+            	<!-- tabs -->
+                <div class="tabbable">
+                  <ul class="nav nav-tabs user-tabs">
+                    <li class="active"><a href="#Itinerary" data-toggle="tab">Itinerary</a></li>
+                    <li><a href="#Cashes" data-toggle="tab">Previous Cashes</a></li>
+                    <li><a href="#Investors" data-toggle="tab">Investors</a></li>
+                    <li><a href="#Graphs" data-toggle="tab">Graphs</a></li>
+                  </ul>
+                  <div class="tab-content user-tab-content">
+                    <div class="tab-pane active" id="Itinerary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
+                    <div class="tab-pane" id="Cashes">
+                    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
+                    <div class="tab-pane" id="Investors">
+                    	<div class="col-sm-6 col-md-4 marginTop20">
+                        	<div class="investor-name">
+                               <h2>Scarlett Johansson</h2>
+                               <div class="investor-img"><img src="images/user-img1.jpg" width="192" height="160" alt=""></div>
+                               <p>Lorem Ipsum is simply printing</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 marginTop20">
+                        	<div class="investor-name">
+                               <h2>Scarlett Johansson</h2>
+                               <div class="investor-img"><img src="images/user-img1.jpg" width="192" height="160" alt=""></div>
+                               <p>Lorem Ipsum is simply printing</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 marginTop20">
+                        	<div class="investor-name">
+                               <h2>Scarlett Johansson</h2>
+                               <div class="investor-img"><img src="images/user-img1.jpg" width="192" height="160" alt=""></div>
+                               <p>Lorem Ipsum is simply printing</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 marginTop20">
+                        	<div class="investor-name">
+                               <h2>Scarlett Johansson</h2>
+                               <div class="investor-img"><img src="images/user-img1.jpg" width="192" height="160" alt=""></div>
+                               <p>Lorem Ipsum is simply printing</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 marginTop20">
+                        	<div class="investor-name">
+                               <h2>Scarlett Johansson</h2>
+                               <div class="investor-img"><img src="images/user-img1.jpg" width="192" height="160" alt=""></div>
+                               <p>Lorem Ipsum is simply printing</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 marginTop20">
+                        	<div class="investor-name">
+                               <h2>Scarlett Johansson</h2>
+                               <div class="investor-img"><img src="images/user-img1.jpg" width="192" height="160" alt=""></div>
+                               <p>Lorem Ipsum is simply printing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane graphs" id="Graphs">
+                   		<img src="images/graph.jpg" width="762" height="499" alt="">
+                        <p>Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</p>
+                    </div>
+                   </div>
+                </div>
+                <!-- /tabs -->
+            </div>
+            </div>
+        </div>
+        
+<!-- footer start--->
+
+<div class="bottom">
+        <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <p>Copyright @ test.com</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 pull-right">
+               <ul class="topSocial pull-right">
+                        <li class="topSocial"><a class="twitter" href="" target="_blank"></a></li>
+                        <li class="topSocial"><a class="facebook" href="" target="_blank"></a></li>
+                        <li class="topSocial"><a class="linkedin" href="" target="_blank"></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!-- footer end--->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("li.dropdown a").click(function () {
+                $("li.dropdown").toggleClass("open");
+            });
+        });
+</script>
+</body>
+</html>
